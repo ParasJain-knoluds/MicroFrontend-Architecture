@@ -1,0 +1,32 @@
+<header class="flex-row">
+  <div style="width:400px">
+    <img src="../assets/angular.png" alt="Angular" width="40" height="40" />
+    <a href="http://localhost:4201">
+      <img src="../assets/react.png" alt="React" width="40" height="40" />
+    </a>
+  </div>
+  <shopping-cart [counter]="counter"></shopping-cart>
+</header>
+
+<div class="flex-row">
+  <img src="../assets/angular.png" alt="Avatar" width="150" />
+  <div>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Type</th>
+        <th>Features</th>
+      </tr>
+      <tr>
+        <td>Angular</td>
+        <td>Framework</td>
+        <td>RxJS, TypeScript</td>
+      </tr>
+    </table>
+
+    <add-to-cart-button
+      type="Angular"
+      (addToCart)="buy($event)"
+    ></add-to-cart-button>
+  </div>
+</div>
