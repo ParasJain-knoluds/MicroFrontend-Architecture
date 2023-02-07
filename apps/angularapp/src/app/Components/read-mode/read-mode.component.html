@@ -1,0 +1,38 @@
+
+   <div class="container" *ngIf="displayRecipe">
+    <div class="left-container" >
+        <img src="{{displayRecipe.foodImage}}">
+    </div>
+
+     <div class="right-container" >
+        <div class="data">
+        <label>Rcipe Name:</label>
+        <span>{{displayRecipe.racipeName |titlecase}} </span>
+        </div>
+        <div class="data">
+        <label>Preparetion time:</label>
+        <span class="normal">{{displayRecipe.prepationTime |titlecase}} </span>
+        </div>
+        <div class="data">
+        <label>Ingrideants:</label>
+        <span >{{displayRecipe.ingredients |titlecase}} </span>
+        </div>
+        <div class="data">
+        <label>Instructions:</label>
+        <span class="instruction">{{displayRecipe.instructions }} </span>
+        </div>
+    </div>
+
+ <div class="btn">
+        <button mat-icon-button color="primary" (click)="editRecipe()">
+        <mat-icon >edit</mat-icon>
+        </button>&nbsp;
+        <button mat-icon-button color="warn" (click)="deleteRecipe(displayRecipe.id)">
+        <mat-icon  >delete</mat-icon>
+        </button>
+</div>
+
+
+
+
+

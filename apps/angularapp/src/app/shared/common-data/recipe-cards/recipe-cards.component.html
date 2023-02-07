@@ -1,0 +1,24 @@
+
+ 
+<!-- <ul>
+    <li *ngFor="let list of displayRecipe" > -->
+        <a>
+            <ng-container *ngIf="displayRecipe.foodImage; else elseBlock ">
+                <img src="{{displayRecipe.foodImage}}"  >
+            </ng-container >
+            <ng-template #elseBlock>
+               <img src="assets/g-5.jpg" alt="img" >
+            </ng-template> 
+           
+            <div class="container" >
+               <div class="icon">
+                <span class="material-icons">
+                    favorite
+                   </span>
+                </div>
+                    <p>{{displayRecipe.racipeName |uppercase}}</p> 
+                    <ng-content></ng-content>
+            </div>
+        </a>
+    <!-- </li>
+</ul> -->

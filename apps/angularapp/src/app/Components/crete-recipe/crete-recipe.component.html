@@ -1,0 +1,68 @@
+<h1>{{title}}</h1>
+<form [formGroup]="createList" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content>
+    <div class="main">
+
+     <ng-container *ngIf="val.value; else elseBlock ">
+                <img src="{{val.value}}"  >
+            </ng-container >
+            <ng-template #elseBlock>
+              <img src="/../assets/default.jpeg">
+            </ng-template>
+    </div>
+
+    <div class="containt">
+      <mat-form-field appearance="outline">
+        <mat-label>Racipe Name</mat-label>
+        <input
+          matInput
+          placeholder="enter name..."
+          formControlName="racipeName"
+        />
+      </mat-form-field>
+     <span *ngIf="!this.createList.get('racipeName')?.valid && this.createList.touched">username is required!</span>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Prepration Time</mat-label>
+        <input
+          matInput
+          placeholder="15 minutes..."
+          formControlName="prepationTime"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>ingredients</mat-label>
+        <input
+          matInput
+          placeholder="15 minutes..."
+          formControlName="ingredients"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Food Image</mat-label>
+        <mat-select  formControlName="foodImage"  #val>
+          <mat-option *ngFor="let food of foods" [value]="food.value" >
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Instructions</mat-label>
+        <textarea matInput formControlName="instructions"></textarea>
+      </mat-form-field>
+
+      <div mat-dialog-actions [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close ml-8>
+          Close
+        </button>
+        <button mat-raised-button color="primary" >
+          {{ actionBtn }}
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+
