@@ -1,0 +1,60 @@
+
+
+  a{
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    width: 400px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    margin: 10px;
+    overflow:hidden;
+    color:rgba(255, 68, 0, 0.945); 
+    box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+  } 
+
+
+   a:hover{
+   opacity: 0.9;
+   box-shadow:rgba(50, 50, 93, 0.739) 0px 6px 12px -2px;
+   cursor: pointer;
+  }
+
+
+  .icon{
+    color: red;
+  }
+  
+
+   a .container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  p{
+    font-size: x-large;
+    color: rgb(128, 0, 0);
+  }
+
+  a .container .btn{
+   padding-left: 10px; 
+   margin-top: 40px;
+   margin-left: -50px;
+   height:40px ;
+   width: 120px; 
+   box-shadow:rgba(50, 50, 93, 0.123) 0px 6px 12px -2px;
+   border-radius: 30px;
+  } 
+  a .container .btn:hover{
+    background-color: rgba(255, 68, 0, 0.945); 
+    color: white;
+  }
+
+  @media screen and (max-width: 600px){
+    a{
+      height: 300px;
+      width: 300px;
+    } 
+
+  }

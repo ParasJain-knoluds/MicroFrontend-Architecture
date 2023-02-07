@@ -1,32 +1,47 @@
-import { Component } from '@angular/core';
-import '@reactangular/elements';
+import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { CreteRecipeComponent } from './Components/crete-recipe/crete-recipe.component';
+import { ApiService } from './Services/api.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'reactangular-root',
   templateUrl: './app.component.html',
-  styles: [
-    `
-      .flex-row {
-        display: flex;
-        align-items: center;
-      }
-      table {
-        border-collapse: collapse;
-        margin-bottom: 5px;
-      }
-
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        padding: 3px;
-      }
-    `
-  ]
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  counter = 0;
-  buy(type: CustomEvent) {
-    this.counter++;
+
+
+  constructor(private dialog:MatDialog, private api:ApiService, private route:Router) {}
+  nevbarOpen=false;
+
+  title = 'RecipeRepo';
+
+  lists=['Total', 'Created', 'Updated','Deleted'];
+
+  ngOnInit(){
   }
+
+
+  toggleNevbar(){
+    this.nevbarOpen = !this.nevbarOpen;
+  }
+
+
+
+
+  openDialog() {
+    this.dialog.open(CreteRecipeComponent, {
+    width:'60%'
+     }).afterClosed().subscribe(res=>{
+       if(res==='save')
+       {
+        this.route.navigate(['home'])
+       }
+
+     })
+  }
+
+
 }
