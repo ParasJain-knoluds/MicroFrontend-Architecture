@@ -70,16 +70,7 @@
   "profile": {
     "name": "typicode"
   },
-
   "Users": [
-    {
-      "racipeName": "pizzaa",
-      "prepationTime": "2 hr",
-      "ingredients": "abc efg",
-      "foodImage": "assets/pizza.jpg",
-      "instructions": "abc",
-      "id": 32
-    },
     {
       "racipeName": "ice cream",
       "prepationTime": "1 hr",

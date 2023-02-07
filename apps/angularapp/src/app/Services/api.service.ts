@@ -18,23 +18,23 @@ export class ApiService {
 
 
   getRecipe() {
-    return this.http.get("http://localhost:3000/CreateList/");
+    return this.http.get("http://localhost:3000/users/");
   }
 
   getRecipeById(id: number) {
-    return this.http.get("http://localhost:3000/CreateList/" + id);
+    return this.http.get("http://localhost:3000/users/" + id);
   }
 
   postRecipe(data: any) {
-    return this.http.post("http://localhost:3000/CreateList/", data);
+    return this.http.post("http://localhost:3000/users/", data);
   }
 
   putRecipe(data: any, id: number) {
-    return this.http.put("http://localhost:3000/CreateList/" + id, data)
+    return this.http.put("http://localhost:3000/users/" + id, data)
   }
 
   deleteRecipe(id: number) {
-    return this.http.delete("http://localhost:3000/CreateList/" + id);
+    return this.http.delete("http://localhost:3000/users/" + id);
   }
 
 

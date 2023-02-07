@@ -19,16 +19,16 @@ interface Food {
 export class CreteRecipeComponent implements OnInit {
   durationInSeconds = 5;
   foods: Food[] = [
-    { value: '../assets/bread-egg.jpg', viewValue: 'Bread Egg' },
-    { value: '../assets/burger.jpg', viewValue: 'Burger' },
-    { value: '../assets/choco-cake.jpg', viewValue: 'Choco Cake' },
-    { value: '../assets/chocolate.jpg', viewValue: 'Chocolate' },
-    { value: '../assets/coffee.jpg', viewValue: 'Coffee' },
-    { value: '../assets/cup-cake.jpg', viewValue: 'Cup Cake' },
-    { value: '../assets/ice-cream.jpg', viewValue: 'Ice-Cream' },
-    { value: '../assets/juice.jpg', viewValue: 'Juice' },
-    { value: '../assets/pizza.jpg', viewValue: 'pizza' },
-    { value: '../assets/veg-roll.jpg', viewValue: 'Veg Roll' }
+    { value: '/../assets/bread-egg.jpg', viewValue: 'Bread Egg' },
+    { value: '/../assets/burger.jpg', viewValue: 'Burger' },
+    { value: '/../assets/choco-cake.jpg', viewValue: 'Choco Cake' },
+    { value: '/../assets/chocolate.jpg', viewValue: 'Chocolate' },
+    { value: '/../assets/coffee.jpg', viewValue: 'Coffee' },
+    { value: '/../assets/cup-cake.jpg', viewValue: 'Cup Cake' },
+    { value: '/../assets/ice-cream.jpg', viewValue: 'Ice-Cream' },
+    { value: '/../assets/juice.jpg', viewValue: 'Juice' },
+    { value: '/../assets/pizza.jpg', viewValue: 'pizza' },
+    { value: '/../assets/veg-roll.jpg', viewValue: 'Veg Roll' }
   ];
 
   createList!: FormGroup;

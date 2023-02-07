@@ -29,6 +29,7 @@ import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/materia
     ReadModeComponent
 
   ],
+  entryComponents:[CreteRecipeComponent],
   imports: [
 
     BrowserModule,
@@ -49,6 +50,7 @@ import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/materia
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
