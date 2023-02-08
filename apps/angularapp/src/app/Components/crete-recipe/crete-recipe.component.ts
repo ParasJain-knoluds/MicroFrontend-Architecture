@@ -33,7 +33,7 @@ export class CreteRecipeComponent implements OnInit {
 
   createList!: FormGroup;
   actionBtn = "Save";
-  title = "Create New Recipe!";
+  title = "Add a New Product!";
 
   constructor(
     private formBuilder: FormBuilder,
