@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
@@ -9,7 +8,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import IconButton, { IconButtonProps } from '@mui/material/IconButton'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import { styled } from '@mui/material'
+import {Button, styled} from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Collapse from '@mui/material/Collapse';
 
@@ -36,7 +35,7 @@ export default function ReciepeList() {
         setExpanded(!expanded);
     };
     useEffect(() => {
-        const getInfo = function getInfo() {
+        const getInfo = function getInfo1() {
             return new Promise((resolve, reject) => {
                 fetch("http://localhost:3000/users/", {
                     method: 'GET',
@@ -48,9 +47,9 @@ export default function ReciepeList() {
                             return null
                         }
                     )
-                    .then(data => {
-                        if (data) {
-                            resolve(data)
+                    .then(data1 => {
+                        if (data1) {
+                            resolve(data1)
                         }
                     })
             })
@@ -63,6 +62,12 @@ export default function ReciepeList() {
 
     return (
         <Box>
+          <a
+            style={{ textDecoration: 'none' }}
+            href='http://localhost:4200'
+          >
+            <Button id='back'>BACK</Button>
+          </a>
             <Grid container sx={{ px: "2", flexWrap: "nowrap", marginTop: '5.5rem', mx: "2%" }}>
                 {data.map(card => (
                     <Grid item xs={12} sm={6} md={8}>
