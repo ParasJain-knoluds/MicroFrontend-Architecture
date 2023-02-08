@@ -1,8 +1,0 @@
-
-<ul class="forTesting">
-    <li *ngFor="let list of displayRecipe" >
- <app-recipe-cards [displayRecipe]="list">
-     <button class="btn" mat-icon-button [routerLink]="['readMode',list.id]">Read more...</button> 
-</app-recipe-cards> 
-</li>
-</ul>

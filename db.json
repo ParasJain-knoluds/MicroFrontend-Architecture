@@ -1,68 +1,35 @@
 {
-  "List": [
-    {
-      "racipeName": "pizzaa",
-      "prepationTime": "2 hr",
-      "ingredients": "abc efg",
-      "foodImage": "assets/pizza.jpg",
-      "instructions": "abc",
-      "id": 32
-    },
-    {
-      "racipeName": "ice cream",
-      "prepationTime": "1 hr",
-      "ingredients": "abc",
-      "foodImage": "assets/ice-cream.jpg",
-      "instructions": "abbs",
-      "id": 33
-    },
-    {
-      "racipeName": "roll",
-      "prepationTime": "3 hr",
-      "ingredients": "abb",
-      "foodImage": "assets/veg-roll.jpg",
-      "instructions": "bbbnn",
-      "id": 34
-    },
-    {
-      "racipeName": "burger",
-      "prepationTime": "ab",
-      "ingredients": "mnbm",
-      "foodImage": "assets/burger.jpg",
-      "instructions": "abb",
-      "id": 35
-    }
-  ],
+  "List": [],
   "comments": [
     {
-      "racipeName": "pizzaa",
-      "prepationTime": "2 hr",
-      "ingredients": "abc efg",
-      "foodImage": "assets/pizza.jpg",
+      "productName": "pizzaa",
+      "description": "2 hr",
+      "price": "abc efg",
+      "productImage": "assets/pizza.jpg",
       "instructions": "abc",
       "id": 32
     },
     {
-      "racipeName": "ice cream",
-      "prepationTime": "1 hr",
-      "ingredients": "abc",
-      "foodImage": "assets/ice-cream.jpg",
+      "productName": "ice cream",
+      "description": "1 hr",
+      "price": "abc",
+      "productImage": "assets/ice-cream.jpg",
       "instructions": "abbs",
       "id": 33
     },
     {
-      "racipeName": "roll",
-      "prepationTime": "3 hr",
-      "ingredients": "abb",
-      "foodImage": "assets/veg-roll.jpg",
+      "productName": "roll",
+      "description": "3 hr",
+      "price": "abb",
+      "productImage": "assets/veg-roll.jpg",
       "instructions": "bbbnn",
       "id": 34
     },
     {
-      "racipeName": "burger",
-      "prepationTime": "ab",
-      "ingredients": "mnbm",
-      "foodImage": "assets/burger.jpg",
+      "productName": "burger",
+      "description": "ab",
+      "price": "mnbm",
+      "productImage": "assets/burger.jpg",
       "instructions": "abb",
       "id": 35
     }
@@ -70,39 +37,48 @@
   "profile": {
     "name": "typicode"
   },
-
   "Users": [
     {
-      "racipeName": "pizzaa",
-      "prepationTime": "2 hr",
-      "ingredients": "abc efg",
-      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "instructions": "abc",
+      "productName": "pizzaa",
+      "description": "2 hr",
+      "price": "abc efg",
+      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "id": 32
     },
     {
-      "racipeName": "ice cream",
-      "prepationTime": "1 hr",
-      "ingredients": "abc",
-      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "instructions": "abbs",
+      "productName": "ice cream",
+      "description": "1 hr",
+      "price": "abc",
+      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "id": 33
     },
     {
-      "racipeName": "roll",
-      "prepationTime": "3 hr",
-      "ingredients": "abb",
-      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "instructions": "bbbnn",
+      "productName": "roll",
+      "description": "3 hr",
+      "price": "abb",
+      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "id": 34
     },
     {
-      "racipeName": "burger",
-      "prepationTime": "ab",
-      "ingredients": "mnbm",
-      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "instructions": "abb",
+      "productName": "burger",
+      "description": "ab",
+      "price": "mnbm",
+      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "id": 35
+    },
+    {
+      "productName": "an",
+      "description": "amn",
+      "price": "787",
+      "productImage": "assets/angular.png",
+      "id": 36
+    },
+    {
+      "productName": "xyz",
+      "description": "abcc",
+      "price": "788",
+      "productImage": "assets/burger.jpg",
+      "id": 37
     }
   ]
 }

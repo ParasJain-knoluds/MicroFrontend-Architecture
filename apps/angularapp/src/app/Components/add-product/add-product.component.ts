@@ -16,7 +16,7 @@ interface Product {
 
 export class AddProductComponent implements OnInit {
   durationInSeconds = 5;
-  foods: Product[] = [
+  products: Product[] = [
     { value: '/../assets/jeans.jpeg', viewValue: 'Jeans' },
     { value: '/../assets/hoodie.png', viewValue: 'Hoodie' },
     { value: '/../assets/jacket.png', viewValue: 'Jacket' },

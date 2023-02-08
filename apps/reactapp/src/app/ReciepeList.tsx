@@ -89,7 +89,7 @@ export default function ReciepeList() {
                             <div>
                                 <CardMedia
                                     component='img'
-                                    image={card.foodImage}
+                                    image={card.productImage}
                                     alt='random'
                                     sx={{ height: '15rem' }}
                                 />
@@ -108,7 +108,7 @@ export default function ReciepeList() {
                                             fontWeight: 'Bold',
                                         }}
                                     >
-                                        {card.racipeName}
+                                        {card.productName}
                                     </Typography>
                                 </CardContent>
                             </div>
@@ -125,8 +125,7 @@ export default function ReciepeList() {
                             <Collapse in={expanded} timeout="auto" unmountOnExit>
                                 <CardContent>
                                     <Typography paragraph>
-                                        Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-                                        aside for 10 minutes.
+                                       {card.description}
                                     </Typography>
 
                                 </CardContent>
