@@ -23,7 +23,7 @@ export class AddProductComponent implements OnInit {
     { value: '/../assets/jewel.png', viewValue: 'Jewellery' },
     { value: '/../assets/watch.jpeg', viewValue: 'Watch' },
     { value: '/../assets/smartWatch.png', viewValue: 'Smart Watch' },
-    { value: '/../assets/shirt.jpeg', viewValue: 'Shirt' },
+    { value: '/../assets/shirt.jpg', viewValue: 'Shirt' },
     { value: '/../assets/tshirt.jpeg', viewValue: 'Tshirt' },
     { value: '/../assets/kurti.jpeg', viewValue: 'Kurti' },
     { value: '/../assets/topGirls.jpg', viewValue: 'Top for Girls' }

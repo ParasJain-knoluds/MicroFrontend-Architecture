@@ -16,8 +16,9 @@
         <mat-label>Product Name</mat-label>
         <input
           matInput
-          placeholder="enter name..."
+          placeholder="Enter product name"
           formControlName="productName"
+          autocomplete="off"
         />
       </mat-form-field>
      <!-- <span *ngIf="!this.createList.get('productName')?.valid && this.createList.touched">Product name is required!</span> -->
@@ -35,6 +36,7 @@
         <input
           matInput
           formControlName="price"
+          autocomplete="off"
         />
       </mat-form-field>
       <mat-form-field appearance="fill">
