@@ -25,10 +25,10 @@ export class CreteRecipeComponent implements OnInit {
     { value: '/../assets/chocolate.jpg', viewValue: 'Chocolate' },
     { value: '/../assets/coffee.jpg', viewValue: 'Coffee' },
     { value: '/../assets/cup-cake.jpg', viewValue: 'Cup Cake' },
-    { value: '/../assets/ice-cream.jpg', viewValue: 'Ice-Cream' },
-    { value: '/../assets/juice.jpg', viewValue: 'Juice' },
-    { value: '/../assets/pizza.jpg', viewValue: 'pizza' },
-    { value: '/../assets/veg-roll.jpg', viewValue: 'Veg Roll' }
+    { value: '/../assets/shirt.jpeg', viewValue: 'Shirt' },
+    { value: '/../assets/tshirt.jpeg', viewValue: 'Tshirt' },
+    { value: '/../assets/kurtiGirls.jpg', viewValue: 'Kurti' },
+    { value: '/../assets/topGirls.jpg', viewValue: 'Top for Girls' }
   ];
 
   createList!: FormGroup;
@@ -48,23 +48,19 @@ export class CreteRecipeComponent implements OnInit {
 
   ngOnInit(): void {
     this.createList = this.formBuilder.group({
-      racipeName: ['', Validators.required],
-      prepationTime: ['', Validators.required],
-      ingredients: ['', Validators.required],
-      foodImage: ['', Validators.required],
-      instructions: ['', Validators.required],
-
-
+      productName: ['', Validators.required],
+      description: ['', Validators.required],
+      price: ['', Validators.required],
+      productImage: ['', Validators.required],
     });
 
     if (this.editData) {
-      this.title = "Update the Recipe"
+      this.title = "Update the Product"
       this.actionBtn = "Update"
-      this.createList.controls['racipeName'].setValue(this.editData.racipeName)
-      this.createList.controls['prepationTime'].setValue(this.editData.prepationTime)
-      this.createList.controls['ingredients'].setValue(this.editData.ingredients)
-      this.createList.controls['foodImage'].setValue(this.editData.foodImage)
-      this.createList.controls['instructions'].setValue(this.editData.instructions)
+      this.createList.controls['productName'].setValue(this.editData.productName)
+      this.createList.controls['description'].setValue(this.editData.description)
+      this.createList.controls['price'].setValue(this.editData.price)
+      this.createList.controls['productImage'].setValue(this.editData.productImage)
     }
 
 
@@ -76,12 +72,12 @@ export class CreteRecipeComponent implements OnInit {
       if (this.createList.valid) {
         this.api.postRecipe(this.createList.value).subscribe({
           next: (res) => {
-            this.api.openSnackBar("Recipe added Successfully!");
+            this.api.openSnackBar("Product added Successfully!");
             this.createList.reset();
             this.dilogRef.close('save');
           },
           error: () => {
-            this.api.openSnackBar("error while geting Recipelist");
+            this.api.openSnackBar("Error while geting Products List");
 
           },
         });
@@ -96,7 +92,7 @@ export class CreteRecipeComponent implements OnInit {
       this.api.putRecipe(this.createList.value, this.editData.id)
         .subscribe({
           next: () => {
-            this.api.openSnackBar("Recipe Updated Successfully!");
+            this.api.openSnackBar("Product Details Updated Successfully!");
             this.createList.reset();
             this.dilogRef.close({
               action: 'update',
@@ -107,7 +103,7 @@ export class CreteRecipeComponent implements OnInit {
           },
 
           error: () => {
-            this.api.openSnackBar("Unable to update Recipe!");
+            this.api.openSnackBar("Unable to update details!");
           }
         })
 

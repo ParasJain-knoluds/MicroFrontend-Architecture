@@ -13,45 +13,37 @@
 
     <div class="containt">
       <mat-form-field appearance="outline">
-        <mat-label>Racipe Name</mat-label>
+        <mat-label>Product Name</mat-label>
         <input
           matInput
           placeholder="enter name..."
-          formControlName="racipeName"
+          formControlName="productName"
         />
       </mat-form-field>
-     <span *ngIf="!this.createList.get('racipeName')?.valid && this.createList.touched">username is required!</span>
+     <!-- <span *ngIf="!this.createList.get('productName')?.valid && this.createList.touched">Product name is required!</span> -->
 
       <mat-form-field appearance="outline">
-        <mat-label>Prepration Time</mat-label>
-        <input
-          matInput
-          placeholder="15 minutes..."
-          formControlName="prepationTime"
-        />
+        <mat-label>Description</mat-label>
+        <textarea
+        matInput
+          placeholder=""
+          formControlName="description"
+        ></textarea>
       </mat-form-field>
       <mat-form-field>
-        <mat-label>ingredients</mat-label>
+        <mat-label>Price</mat-label>
         <input
           matInput
-          placeholder="15 minutes..."
-          formControlName="ingredients"
+          formControlName="price"
         />
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label>Food Image</mat-label>
-        <mat-select  formControlName="foodImage"  #val>
+        <mat-label>Product Image</mat-label>
+        <mat-select  formControlName="productImage"  #val>
           <mat-option *ngFor="let food of foods" [value]="food.value" >
             {{food.viewValue}}
           </mat-option>
         </mat-select>
-      </mat-form-field>
-
-
-
-      <mat-form-field appearance="outline">
-        <mat-label>Instructions</mat-label>
-        <textarea matInput formControlName="instructions"></textarea>
       </mat-form-field>
 
       <div mat-dialog-actions [align]="'end'">

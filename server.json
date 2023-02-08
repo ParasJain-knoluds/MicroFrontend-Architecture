@@ -9,18 +9,18 @@
       "id": 32
     },
     {
-      "racipeName": "ice cream",
+      "racipeName": "Kurti for girls",
       "prepationTime": "1 hr",
       "ingredients": "abc",
-      "foodImage": "assets/ice-cream.jpg",
+      "foodImage": "assets/kurtiGirls.jpg",
       "instructions": "abbs",
       "id": 33
     },
     {
-      "racipeName": "roll",
+      "racipeName": "Top for girls",
       "prepationTime": "3 hr",
       "ingredients": "abb",
-      "foodImage": "assets/veg-roll.jpg",
+      "foodImage": "assets/topGirls.jpg",
       "instructions": "bbbnn",
       "id": 34
     },
