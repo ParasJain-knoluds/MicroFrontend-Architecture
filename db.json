@@ -76,7 +76,7 @@
       "racipeName": "pizzaa",
       "prepationTime": "2 hr",
       "ingredients": "abc efg",
-      "foodImage": "assets/pizza.jpg",
+      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "instructions": "abc",
       "id": 32
     },
@@ -84,7 +84,7 @@
       "racipeName": "ice cream",
       "prepationTime": "1 hr",
       "ingredients": "abc",
-      "foodImage": "assets/ice-cream.jpg",
+      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "instructions": "abbs",
       "id": 33
     },
@@ -92,7 +92,7 @@
       "racipeName": "roll",
       "prepationTime": "3 hr",
       "ingredients": "abb",
-      "foodImage": "assets/veg-roll.jpg",
+      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "instructions": "bbbnn",
       "id": 34
     },
@@ -100,7 +100,7 @@
       "racipeName": "burger",
       "prepationTime": "ab",
       "ingredients": "mnbm",
-      "foodImage": "assets/burger.jpg",
+      "foodImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "instructions": "abb",
       "id": 35
     }
