@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import { CreteRecipeComponent } from './Components/crete-recipe/crete-recipe.component';
+import { AddProductComponent} from './Components/add-product/add-product.component';
 import { ApiService } from './Services/api.service';
 import { Router } from '@angular/router';
 
@@ -32,7 +32,7 @@ export class AppComponent {
 
 
   openDialog() {
-    this.dialog.open(CreteRecipeComponent, {
+    this.dialog.open(AddProductComponent, {
     width:'60%'
      }).afterClosed().subscribe(res=>{
        if(res==='save')

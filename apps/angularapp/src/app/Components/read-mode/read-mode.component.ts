@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { CreteRecipeComponent } from '../crete-recipe/crete-recipe.component';
+import { AddProductComponent } from '../add-product/add-product.component';
 import { ApiService } from '../../Services/api.service';
 
 @Component({
@@ -39,7 +39,7 @@ export class ReadModeComponent implements OnInit {
   }
 
   editRecipe() {
-    this.dialog.open(CreteRecipeComponent, {
+    this.dialog.open(AddProductComponent, {
       width: '60%',
       data: this.displayRecipe,
 

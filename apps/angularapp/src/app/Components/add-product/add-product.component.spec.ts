@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CreteRecipeComponent } from './crete-recipe.component';
+import { AddProductComponent } from './add-product.component';
 import { FormBuilder } from '@angular/forms';
 
 
-describe('CreteRecipeComponent', () => {
-  let component: CreteRecipeComponent;
-  let fixture: ComponentFixture<CreteRecipeComponent>;
+describe('AddProductComponent', () => {
+  let component: AddProductComponent;
+  let fixture: ComponentFixture<AddProductComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CreteRecipeComponent ],
+      declarations: [ AddProductComponent ],
       imports:[FormBuilder]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CreteRecipeComponent);
+    fixture = TestBed.createComponent(AddProductComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

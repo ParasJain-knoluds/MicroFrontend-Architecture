@@ -3,31 +3,29 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ApiService } from '../../Services/api.service';
 
-
-
-interface Food {
+interface Product {
   value: string;
   viewValue: string;
 }
 
 @Component({
-  selector: 'app-crete-recipe',
-  templateUrl: './crete-recipe.component.html',
-  styleUrls: ['./crete-recipe.component.css'],
+  selector: 'app-add-product',
+  templateUrl: './add-product.component.html',
+  styleUrls: ['./add-product.component.css'],
 })
 
-export class CreteRecipeComponent implements OnInit {
+export class AddProductComponent implements OnInit {
   durationInSeconds = 5;
-  foods: Food[] = [
-    { value: '/../assets/bread-egg.jpg', viewValue: 'Bread Egg' },
-    { value: '/../assets/burger.jpg', viewValue: 'Burger' },
-    { value: '/../assets/choco-cake.jpg', viewValue: 'Choco Cake' },
-    { value: '/../assets/chocolate.jpg', viewValue: 'Chocolate' },
-    { value: '/../assets/coffee.jpg', viewValue: 'Coffee' },
-    { value: '/../assets/cup-cake.jpg', viewValue: 'Cup Cake' },
+  foods: Product[] = [
+    { value: '/../assets/jeans.jpeg', viewValue: 'Jeans' },
+    { value: '/../assets/hoodie.png', viewValue: 'Hoodie' },
+    { value: '/../assets/jacket.png', viewValue: 'Jacket' },
+    { value: '/../assets/jewel.png', viewValue: 'Jewellery' },
+    { value: '/../assets/watch.jpeg', viewValue: 'Watch' },
+    { value: '/../assets/smartWatch.png', viewValue: 'Smart Watch' },
     { value: '/../assets/shirt.jpeg', viewValue: 'Shirt' },
     { value: '/../assets/tshirt.jpeg', viewValue: 'Tshirt' },
-    { value: '/../assets/kurtiGirls.jpg', viewValue: 'Kurti' },
+    { value: '/../assets/kurti.jpeg', viewValue: 'Kurti' },
     { value: '/../assets/topGirls.jpg', viewValue: 'Top for Girls' }
   ];
 

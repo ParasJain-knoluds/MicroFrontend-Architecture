@@ -2,7 +2,6 @@
 // import { RouterTestingModule } from '@angular/router/testing';
 // import { AppComponent } from './app.component';
 // import {MatDialog} from '@angular/material/dialog';
-// import { CreteRecipeComponent } from './Components/crete-recipe/crete-recipe.component';
 // import { ApiService } from './Services/api.service';
 
 // describe('AppComponent', () => {
@@ -14,7 +13,6 @@
 //       ],
 //       declarations: [
 //         AppComponent,
-//         CreteRecipeComponent
 //       ],
 //       providers:[ApiService]
 //     }).compileComponents();

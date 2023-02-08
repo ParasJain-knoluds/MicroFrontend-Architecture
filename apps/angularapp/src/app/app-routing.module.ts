@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
 import { ReadModeComponent } from './Components/read-mode/read-mode.component';
 import { RecipyListComponent } from './Components/recipy-list/recipy-list.component';
-//import { CreteRecipeComponent } from './Components/crete-recipe/crete-recipe.component';
 
 const routes: Routes = [
   {

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreteRecipeComponent } from './Components/crete-recipe/crete-recipe.component';
+import { AddProductComponent } from './Components/add-product/add-product.component';
 import { HomeComponent } from './Components/home/home.component';
 import { RecipyListComponent } from './Components/recipy-list/recipy-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,13 +23,13 @@ import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/materia
 @NgModule({
   declarations: [
     AppComponent,
-    CreteRecipeComponent,
+    AddProductComponent,
     HomeComponent,
     RecipyListComponent,
     ReadModeComponent
 
   ],
-  entryComponents:[CreteRecipeComponent],
+  entryComponents:[AddProductComponent],
   imports: [
 
     BrowserModule,
