@@ -15,26 +15,24 @@ export class ApiService {
     this._snackBar.open(message ,'ok');
   }
 
-
-
-  getRecipe() {
-    return this.http.get("http://localhost:3000/users/");
+  getProducts() {
+    return this.http.get("http://localhost:3000/products/");
   }
 
-  getRecipeById(id: number) {
-    return this.http.get("http://localhost:3000/users/" + id);
+  getProductById(id: number) {
+    return this.http.get("http://localhost:3000/products/" + id);
   }
 
-  postRecipe(data: any) {
-    return this.http.post("http://localhost:3000/users/", data);
+  postProduct(data: any) {
+    return this.http.post("http://localhost:3000/products/", data);
   }
 
-  putRecipe(data: any, id: number) {
-    return this.http.put("http://localhost:3000/users/" + id, data)
+  putProduct(data: any, id: number) {
+    return this.http.put("http://localhost:3000/products/" + id, data)
   }
 
-  deleteRecipe(id: number) {
-    return this.http.delete("http://localhost:3000/users/" + id);
+  deleteProduct(id: number) {
+    return this.http.delete("http://localhost:3000/products/" + id);
   }
 
 

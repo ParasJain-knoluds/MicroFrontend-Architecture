@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
-import { ReadModeComponent } from './Components/read-mode/read-mode.component';
 
 const routes: Routes = [
   {
@@ -10,18 +9,7 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent
   },
-  // { path: 'recipyList', component: RecipyListComponent },
-  // {
-  //   path: 'recipyList',
-  //   children: [
-  //     {
-  //       path: 'readMode/:id',
-  //       component: ReadModeComponent,
-  //     }
-
-  //   ],
-
-  // },
+  
 
   {
     path: '**',

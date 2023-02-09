@@ -16,20 +16,12 @@ export class AppComponent {
   constructor(private dialog:MatDialog, private api:ApiService, private route:Router) {}
   nevbarOpen=false;
 
-  title = 'RecipeRepo';
+  title = 'ProductRepo';
 
   lists=['Total', 'Created', 'Updated','Deleted'];
 
   ngOnInit(){
   }
-
-
-  toggleNevbar(){
-    this.nevbarOpen = !this.nevbarOpen;
-  }
-
-
-
 
   openDialog() {
     this.dialog.open(AddProductComponent, {

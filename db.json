@@ -1,84 +1,32 @@
 {
-  "List": [],
-  "comments": [
+  "products": [
     {
-      "productName": "pizzaa",
-      "description": "2 hr",
-      "price": "abc efg",
-      "productImage": "assets/pizza.jpg",
-      "instructions": "abc",
-      "id": 32
-    },
-    {
-      "productName": "ice cream",
-      "description": "1 hr",
-      "price": "abc",
-      "productImage": "assets/ice-cream.jpg",
-      "instructions": "abbs",
-      "id": 33
-    },
-    {
-      "productName": "roll",
-      "description": "3 hr",
-      "price": "abb",
-      "productImage": "assets/veg-roll.jpg",
-      "instructions": "bbbnn",
-      "id": 34
-    },
-    {
-      "productName": "burger",
-      "description": "ab",
-      "price": "mnbm",
-      "productImage": "assets/burger.jpg",
-      "instructions": "abb",
-      "id": 35
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "Users": [
-    {
-      "productName": "pizzaa",
-      "description": "2 hr",
-      "price": "abc efg",
-      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "id": 32
-    },
-    {
-      "productName": "ice cream",
-      "description": "1 hr",
-      "price": "abc",
-      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "id": 33
-    },
-    {
-      "productName": "roll",
-      "description": "3 hr",
-      "price": "abb",
-      "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "id": 34
-    },
-    {
-      "productName": "burger",
-      "description": "ab",
-      "price": "mnbm",
+      "productName": "Knoldus Tshirt",
+      "description": "tshirt",
+      "price": "750",
       "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
       "id": 35
     },
     {
-      "productName": "an",
-      "description": "amn",
-      "price": "787",
-      "productImage": "assets/angular.png",
+      "productName": "Shirt",
+      "description": "Shirt for men",
+      "price": "1000",
+      "productImage": "assets/shirt.jpg",
       "id": 36
     },
     {
-      "productName": "xyz",
-      "description": "abcc",
-      "price": "788",
-      "productImage": "assets/burger.jpg",
+      "productName": "Watch",
+      "description": "Watch for men",
+      "price": "2000",
+      "productImage": "assets/watch.jpeg",
       "id": 37
+    },
+    {
+      "productName": "Top",
+      "description": "girls top",
+      "price": "500",
+      "productImage": "/../assets/topGirls.jpg",
+      "id": 38
     }
   ]
 }

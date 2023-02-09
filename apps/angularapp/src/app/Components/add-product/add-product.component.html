@@ -42,8 +42,8 @@
       <mat-form-field appearance="fill">
         <mat-label>Product Image</mat-label>
         <mat-select  formControlName="productImage"  #val>
-          <mat-option *ngFor="let food of products" [value]="food.value" >
-            {{food.viewValue}}
+          <mat-option *ngFor="let product of products" [value]="product.value" >
+            {{product.viewValue}}
           </mat-option>
         </mat-select>
       </mat-form-field>

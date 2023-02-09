@@ -14,7 +14,6 @@ import {MatDialogModule} from '@angular/material/dialog';
  import {MatChipsModule} from '@angular/material/chips';
  import {FormsModule, ReactiveFormsModule } from '@angular/forms';
  import { HttpClientModule } from '@angular/common/http';
-import { ReadModeComponent } from './Components/read-mode/read-mode.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/material/snack-bar';
 
@@ -23,7 +22,6 @@ import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/materia
     AppComponent,
     AddProductComponent,
     HomeComponent,
-    ReadModeComponent
 
   ],
   entryComponents:[AddProductComponent],

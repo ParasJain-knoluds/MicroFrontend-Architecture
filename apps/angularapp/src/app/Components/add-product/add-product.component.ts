@@ -68,7 +68,7 @@ export class AddProductComponent implements OnInit {
   onSubmit() {
     if (!this.editData) {
       if (this.createList.valid) {
-        this.api.postRecipe(this.createList.value).subscribe({
+        this.api.postProduct(this.createList.value).subscribe({
           next: (res) => {
             this.api.openSnackBar("Product added Successfully!");
             this.createList.reset();
@@ -81,13 +81,13 @@ export class AddProductComponent implements OnInit {
         });
       }
     } else {
-      this.updateRecipe();
+      this.updateProduct();
     }
   }
 
-  updateRecipe() {
+  updateProduct() {
     if (this.createList.valid) {
-      this.api.putRecipe(this.createList.value, this.editData.id)
+      this.api.putProduct(this.createList.value, this.editData.id)
         .subscribe({
           next: () => {
             this.api.openSnackBar("Product Details Updated Successfully!");

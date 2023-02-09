@@ -12,7 +12,7 @@ import {Button, styled} from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Collapse from '@mui/material/Collapse';
 
-export default function ReciepeList() {
+export default function ProductList() {
     const [data, setData] = useState([])
     interface ExpandMoreProps extends IconButtonProps {
         expand: boolean;
@@ -37,7 +37,7 @@ export default function ReciepeList() {
     useEffect(() => {
         const getInfo = function getInfo1() {
             return new Promise((resolve, reject) => {
-                fetch("http://localhost:3000/users/", {
+                fetch("http://localhost:3000/products/", {
                     method: 'GET',
                 })
                     .then(
@@ -54,8 +54,8 @@ export default function ReciepeList() {
                     })
             })
         }
-        getInfo().then(reciepe => {
-            const response = reciepe
+        getInfo().then(product => {
+            const response = product
             setData(response);
         })
     }, [])
