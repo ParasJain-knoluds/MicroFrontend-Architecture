@@ -5,21 +5,21 @@
       "description": "tshirt",
       "price": "750",
       "productImage": "https://i.postimg.cc/c4z4f6bs/thre.jpg",
-      "id": 35
+      "id":1
     },
     {
       "productName": "Shirt",
       "description": "Shirt for men",
       "price": "1000",
       "productImage": "assets/shirt.jpg",
-      "id": 36
+      "id":2
     },
     {
       "productName": "Watch",
       "description": "Watch for men",
       "price": "2000",
       "productImage": "assets/watch.jpeg",
-      "id": 37
+      "id":3
     },
     {
       "productName": "Top",
@@ -27,6 +27,13 @@
       "price": "500",
       "productImage": "/../assets/topGirls.jpg",
       "id": 38
+    },
+    {
+      "productName": "Jewellery",
+      "description": "Get up to 20% off* on diamond jewellery value. *T&C Apply. Shop Now. Shop Diamond Jewellery For Women. ",
+      "price": "80000",
+      "productImage": "/../assets/jewel.png",
+      "id":4
     }
   ]
 }

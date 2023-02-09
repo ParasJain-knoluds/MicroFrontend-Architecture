@@ -68,7 +68,7 @@ export default function ProductList() {
             >
                 <Button id='back'>BACK</Button>
             </a>
-            <Grid container sx={{ px: "2", flexWrap: "wrap", flexDirection: "row", marginTop: '5.5rem' }}>
+            <Grid container sx={{ paddingLeft: "2rem", flexWrap: "wrap", flexDirection: "row", marginTop: '5.5rem'}}>
                 {data.map(card => (
                     <Grid item xs={4} sm={4} md={4} lg={3} sx={{ marginTop: "40px" }}>
                         <Card
@@ -107,7 +107,11 @@ export default function ProductList() {
                                     >
                                         {card.productName}
                                     </Typography>
-                                    <Typography paragraph>
+                                    <Typography paragraph
+                                        sx={{
+                                       marginX:'18px'
+                                      }}
+                                  >
                                         {card.description}
                                     </Typography>
 
