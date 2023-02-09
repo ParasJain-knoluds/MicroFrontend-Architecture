@@ -8,7 +8,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import IconButton, { IconButtonProps } from '@mui/material/IconButton'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import {Button, styled} from '@mui/material'
+import { Button, styled } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Collapse from '@mui/material/Collapse';
 
@@ -62,21 +62,21 @@ export default function ProductList() {
 
     return (
         <Box>
-          <a
-            style={{ textDecoration: 'none' }}
-            href='http://localhost:4200'
-          >
-            <Button id='back'>BACK</Button>
-          </a>
-            <Grid container sx={{ px: "2", flexWrap: "nowrap", marginTop: '5.5rem', mx: "2%" }}>
+            <a
+                style={{ textDecoration: 'none' }}
+                href='http://localhost:4200'
+            >
+                <Button id='back'>BACK</Button>
+            </a>
+            <Grid container sx={{ px: "2", flexWrap: "wrap", flexDirection: "row", marginTop: '5.5rem' }}>
                 {data.map(card => (
-                    <Grid item xs={12} sm={6} md={8}>
+                    <Grid item xs={4} sm={4} md={4} lg={3} sx={{ marginTop: "40px" }}>
                         <Card
                             sx={{
                                 backgroundColor: '#FFFFFF',
                                 height: '100%',
                                 position: 'relative',
-                                width: '85%',
+                                width: '90%',
                                 display: 'flex',
                                 flexDirection: 'column',
                                 borderRadius: 5,
@@ -93,26 +93,27 @@ export default function ProductList() {
                                     alt='random'
                                     sx={{ height: '15rem' }}
                                 />
-                                <CardContent sx={{ display: "flex", width: "100%", paddingBottom: "0px"}}>
-                                    <IconButton aria-label="add to favorites">
-                                        <FavoriteIcon sx={{ color: 'red' }} />
-                                    </IconButton>
+                                <CardContent sx={{ display: "flex",flexDirection: "column", alignItems: "center", width: "100%", marginTop: "6px", padding: "0px"}}>
                                     <Typography
                                         gutterBottom
                                         variant='h4'
                                         component='div'
                                         sx={{
                                             color: '#4E58B3',
-                                            px: "25%",
+                                            // px: "35%",
                                             fontSize: '24px',
                                             fontWeight: 'Bold',
                                         }}
                                     >
                                         {card.productName}
                                     </Typography>
+                                    <Typography paragraph>
+                                        {card.description}
+                                    </Typography>
+
                                 </CardContent>
                             </div>
-                            <CardActions disableSpacing sx={{ justifyContent: 'flex-end', padding: "0%" }}>
+                            {/* <CardActions disableSpacing sx={{ justifyContent: 'flex-end', padding: "0%" }}>
                                 <ExpandMore
                                     expand={expanded}
                                     onClick={handleExpandClick}
@@ -129,7 +130,7 @@ export default function ProductList() {
                                     </Typography>
 
                                 </CardContent>
-                            </Collapse>
+                            </Collapse> */}
                         </Card>
                     </Grid>
                 ))}
